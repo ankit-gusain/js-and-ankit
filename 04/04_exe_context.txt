@@ -1,3 +1,8 @@
+JS
+Single-threaded language, means that it has only one execution thread, 
+and code is executed sequentially, one operation at a time.
+
+
 In JavaScript, 
 an "execution context" is a concept that refers to the environment in which a piece of code 
 is executed. It includes information about the variables and functions that are currently 
@@ -21,4 +26,11 @@ HOW A PROGRAM EXECUTES IN JS....
 3.  execution phase           
     values are initailised
 
-//parent exe context mein return hota hai 
+//parent exe context mein return hota hai
+----------------------------------------------------------------------------------------------------------------- 
+
+callstack
+
+the execution contexts are managed by the JavaScript engine, and they form a stack known as the "call stack." 
+
+1st comes global exe context then fucntion and the functions follows LIFO
