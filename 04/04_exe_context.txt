@@ -1,0 +1,24 @@
+In JavaScript, 
+an "execution context" is a concept that refers to the environment in which a piece of code 
+is executed. It includes information about the variables and functions that are currently 
+in scope, as well as the value of the "this" keyword. 
+
+iske andar 3 types hote hai 
+1.  global exe context
+2.  function exe coontext
+3.  eval exe context
+
+HOW A PROGRAM EXECUTES IN JS....
+
+1.  global execution       
+    KOI BHI PROGRAM HO VO ISKE ANDAR AATA HI AATA HAI OR SABSE PEHLE ISE "THIS" KE ANDAR ALLOCATE KIYA JATA HAI 
+
+2.  memory creation phase   
+    allocation of memory
+    here---
+    variables ko undefined allocate kiya jata hai or functions ko def 
+
+3.  execution phase           
+    values are initailised
+
+//parent exe context mein return hota hai 
