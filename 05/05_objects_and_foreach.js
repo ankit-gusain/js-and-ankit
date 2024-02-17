@@ -18,7 +18,7 @@
 //-------------------------------------------------
 
 //call back fns--- doesnot have name
-//for each.......
+//for each.......call back funtions
 
 let lang = ["start", "mid", "end"];
 
