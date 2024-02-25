@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout and interval</title>
+</head>
+
+<body>
+
+    <h1>Lets code ...</h1>
+    <h3></h3>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+    <button id="startCount">start counting</button>
+    <button id="stopCount">stop counting</button>
+
+</body>
+
+<!-- 
+demonstarting use of set interval and clear interval 
+setInterval accepts function/call back/handler , timeout , argumens
+clearInterval accepets reference to that handler  -->
+
+
+<script>
+
+    let starter;
+    let onStart = document.querySelector("#start");
+    onStart.addEventListener("click", function (e) {
+        starter = setInterval(function () {
+            console.log("start");
+        }, 2000);
+    });
+
+    let onStop = document.querySelector("#stop");
+    onStop.addEventListener("click", function () {
+        clearInterval(starter);
+        console.log("stopped");
+    });
+
+    // --------------------------------------------------------------------------------------------
+
+    let count = 1   ;
+    let counter;
+    document.querySelector("#startCount").addEventListener("click", () => {
+        counter = setInterval(() => {
+            document.querySelector("h3").innerHTML = count++;
+        }, 900);
+    });
+
+    document.querySelector("#stopCount").addEventListener("click", () => {
+        clearInterval(counter);
+    });
+
+</script>
+
+</html>
