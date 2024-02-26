@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let req_url = "https://api.github.com/users";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", req_url);
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText); //json.parse to convert to object
+            console.log(typeof data);
+            data.forEach((user) => {
+
+                console.log(user.login);
+            });
+            console.log("----------------------------------------------");
+
+        }
+
+    };
+    xhr.send();
+</script>
+
+</html>
